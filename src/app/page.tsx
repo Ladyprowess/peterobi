@@ -48,9 +48,9 @@ export default function Home() {
               className="relative rounded-3xl bg-white p-3 shadow-2xl shadow-black/15 sm:p-4"
             >
               <Figure
-                src={candidate.portrait}
-                alt={`Portrait of ${candidate.name}`}
-                fallback="PO"
+                src="/images/obi-kwankwaso-hero.png"
+                alt="Peter Obi and Rabiu Musa Kwankwaso"
+                fallback="PO · RMK"
                 aspect="aspect-square"
                 sizes="(min-width: 1024px) 26rem, 100vw"
                 priority

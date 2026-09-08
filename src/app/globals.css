@@ -147,6 +147,15 @@ html {
   scroll-behavior: smooth;
 }
 
+.media-rail {
+  scrollbar-width: thin;
+  scrollbar-color: var(--green) var(--tint);
+}
+
+.media-rail::-webkit-scrollbar { height: 5px; }
+.media-rail::-webkit-scrollbar-track { background: var(--tint); }
+.media-rail::-webkit-scrollbar-thumb { background: var(--green); border-radius: 999px; }
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

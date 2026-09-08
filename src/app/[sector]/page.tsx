@@ -6,6 +6,8 @@ import { ShareRow } from "@/components/Share";
 import { StatGrid } from "@/components/Stats";
 import { ArrowRight, sectorIcons } from "@/components/Icons";
 import { Figure } from "@/components/Figure";
+import { SectorStory } from "@/components/SectorStory";
+import { mediaForSector } from "@/lib/evidence";
 
 /** Only the eight known issues exist. Anything else is a 404. */
 export const dynamicParams = false;
@@ -25,47 +27,6 @@ export async function generateMetadata({
     description: sector.tagline,
     openGraph: { title: `${sector.name} | Obi 2027`, description: sector.tagline },
   };
-}
-
-function Block({
-  step,
-  headline,
-  points,
-  accent = false,
-}: {
-  step: string;
-  headline: string;
-  points: string[];
-  accent?: boolean;
-}) {
-  return (
-    <section className={accent ? "bg-tint" : ""}>
-      <div className="mx-auto max-w-4xl px-4 py-12 md:px-6 lg:px-8 lg:py-16">
-        <div className="flex items-baseline gap-3">
-          <span className="tnum font-display text-2xl font-semibold text-green">
-            {step}
-          </span>
-          <h2 className="font-display text-3xl leading-tight text-green-ink sm:text-4xl">
-            {headline}
-          </h2>
-        </div>
-
-        <ul className="mt-7 space-y-4">
-          {points.map((p) => (
-            <li key={p} className="flex gap-3.5">
-              <span
-                aria-hidden="true"
-                className="mt-2.5 h-1.5 w-6 shrink-0 rounded-full bg-green"
-              />
-              <span className="text-[16px] leading-relaxed text-ink sm:text-[17px]">
-                {p}
-              </span>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </section>
-  );
 }
 
 export default async function SectorPage({ params }: PageProps<"/[sector]">) {
@@ -117,23 +78,16 @@ export default async function SectorPage({ params }: PageProps<"/[sector]">) {
         </div>
       )}
 
-      <Block step="01" headline={sector.now.headline} points={sector.now.points} />
-      <Block
-        step="02"
-        headline={sector.record.headline}
-        points={sector.record.points}
-        accent
-      />
-      <Block step="03" headline={sector.plan.headline} points={sector.plan.points} />
+      <SectorStory sector={sector.name} now={sector.now} record={sector.record} future={sector.plan} media={mediaForSector(sector.slug, sector.name)} />
 
       <section className="mx-auto max-w-4xl px-4 pb-14 md:px-6 lg:px-8 lg:pb-20">
         <div className="rounded-2xl border border-line bg-gold-wash p-6 sm:flex sm:items-center sm:justify-between sm:gap-8 sm:p-8">
           <div>
-            <p className="eyebrow text-gold-deep">Verification matters</p>
-            <h2 className="mt-2 font-display text-2xl font-semibold text-green-ink">Check the documents behind the campaign.</h2>
-            <p className="mt-2 text-sm leading-relaxed text-soft">Records, current conditions and future proposals are different types of claims. The evidence library labels them clearly.</p>
+            <p className="eyebrow text-gold-deep">The Top 100 project</p>
+            <h2 className="mt-2 font-display text-2xl font-semibold text-green-ink">See every reason, organised by the problem it addresses.</h2>
+            <p className="mt-2 text-sm leading-relaxed text-soft">Each reason connects Peter Obi&apos;s Anambra record to a practical national question.</p>
           </div>
-          <Link href="/evidence" className="mt-5 inline-flex shrink-0 items-center gap-2 rounded-full bg-ink px-5 py-3 text-sm font-bold text-white sm:mt-0">View sources <ArrowRight className="size-4" /></Link>
+          <Link href="/evidence" className="mt-5 inline-flex shrink-0 items-center gap-2 rounded-full bg-ink px-5 py-3 text-sm font-bold text-white sm:mt-0">View all reasons <ArrowRight className="size-4" /></Link>
         </div>
       </section>
 

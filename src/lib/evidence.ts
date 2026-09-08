@@ -16,7 +16,7 @@ export type EvidenceItem = {
 };
 
 export const sources: Record<string, Source> = {
-  manifesto2023: { title: "Our Pact with Nigerians", publisher: "Peter Obi presidential campaign", url: "https://www.peterobi.com/", kind: "speech" },
+  manifesto2023: { title: "Peter Obi releases ‘Our Pact with Nigerians’ manifesto", publisher: "TheCable", url: "https://www.thecable.ng/peter-obi-finally-releases-manifesto-promises-to-build-world-class-infrastructure/", date: "4 December 2022", kind: "reporting" },
   worldBankNigeria: { title: "Nigeria overview and development updates", publisher: "World Bank", url: "https://www.worldbank.org/en/country/nigeria/overview", kind: "official" },
   nbsCpi: { title: "Consumer Price Index reports", publisher: "National Bureau of Statistics", url: "https://www.nigerianstat.gov.ng/elibrary", kind: "official" },
   dmoDebt: { title: "Nigeria public debt data", publisher: "Debt Management Office Nigeria", url: "https://www.dmo.gov.ng/debt-profile/total-public-debt", kind: "official" },
@@ -57,3 +57,19 @@ export const mediaItems = [
   { type: "photo" as const, sector: "Education", title: "The classroom reality", description: "Documented school conditions paired with enrolment and learning datanot images without context.", image: "/images/media-classroom.jpg" },
   { type: "video" as const, sector: "Cost of living", title: "What families are paying", description: "Market visits, receipts and first-person accounts with dates so viewers can verify when prices changed.", image: "/images/media-market.jpg" },
 ];
+
+export function mediaForSector(slug: string, name: string) {
+  const labels = slug === "health"
+    ? ["Primary healthcare today", "Hospital access", "The Anambra health record"]
+    : slug === "education"
+      ? ["Classrooms today", "Children outside school", "The Anambra school turnaround"]
+      : slug === "infrastructure"
+        ? ["Federal roads today", "Road damage and delays", "Road delivery in Anambra"]
+        : [`${name} today`, "The human impact", `The Anambra ${name.toLowerCase()} record`];
+  return labels.map((title, index) => ({
+    image: `/images/${slug}-${index + 1}.jpg`,
+    type: index === 1 ? "video" as const : "photo" as const,
+    title,
+    caption: index === 2 ? "Documented material from Peter Obi's Anambra record." : "Current Nigerian conditions, with location, date and original source to be confirmed before publication.",
+  }));
+}

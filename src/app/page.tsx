@@ -22,7 +22,7 @@ export default function Home() {
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/85">
-                This is the documented case for Peter Obi: what Nigeria is living
+                This is the evidence-led case for Peter Obi: what Nigeria is living
                 through, what he delivered in Anambra, and what he says he will do
                 differently as president.
               </p>

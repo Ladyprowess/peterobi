@@ -65,7 +65,7 @@ export const headlineStats: Stat[] = [
   { value: "1st", from: "26th", label: "National WAEC ranking, from 26th of 36 states" },
   { value: "12+", from: "0", label: "Accredited health institutions, from none in 2006" },
   { value: "5 yrs", label: "Consecutive polio free years in Anambra" },
-  { value: "800km", label: "Roads built, with maintenance bonds attached" },
+  { value: "800km", label: "Roads reported completed by the administration" },
 ];
 
 export const sectors: Sector[] = [
@@ -81,7 +81,7 @@ export const sectors: Sector[] = [
     stats: [
       { value: "12+", from: "0", label: "Accredited health institutions" },
       { value: "5 yrs", label: "Polio free, consecutively" },
-      { value: "$1m", label: "Gates Foundation immunisation award" },
+      { value: "₦120m", label: "Reported immunisation award" },
       { value: "70+", label: "Ambulances donated to mission hospitals" },
     ],
     now: {
@@ -103,7 +103,7 @@ export const sectors: Sector[] = [
         "He funded upgrades to Onitsha General Hospital and the School of Health Technology.",
         "He donated more than 70 ambulances to mission and charity hospitals, extending emergency transport far beyond government facilities.",
         "Anambra eradicated polio under his watch and stayed polio free for five consecutive years.",
-        "The Bill and Melinda Gates Foundation gave Anambra a $1 million award as the best performing state on immunisation.",
+        "Anambra received a reported ₦120 million award connected to its polio-eradication and routine-immunisation performance in the South-East.",
         "He invested in cardiac care, making heart operations possible at St Joseph's Hospital, Adazi Nnukwu, where they had never been available before.",
         "He funded rehabilitation services for stroke and post traumatic conditions, an area Nigerian states almost never touch.",
       ],
@@ -171,13 +171,12 @@ export const sectors: Sector[] = [
     concern: "Jobs, prices, and how government spends",
     icon: "economy",
     image: "/images/economy.jpg",
-    tagline: "The first state in Sub-Saharan Africa to start a sovereign wealth fund.",
+    tagline: "A record of fiscal restraint that should be judged from the underlying accounts.",
     intro:
       "Obi ran Anambra like a business that intended to still exist in twenty years. He saved, he refused to borrow recklessly, and he left money in the treasury.",
     stats: [
-      { value: "$150m", label: "Left in state savings on departure" },
-      { value: "1st", label: "State in Sub-Saharan Africa to start sovereign wealth savings" },
-      { value: "Least", label: "Indebted state in Nigeria, rated by the DMO" },
+      { value: "₦3.03bn", label: "Domestic debt recorded by DMO at December 2013" },
+      { value: "$30.3m", label: "External debt recorded by DMO at December 2013" },
     ],
     now: {
       headline: "Where Nigeria stands today",
@@ -190,9 +189,8 @@ export const sectors: Sector[] = [
     record: {
       headline: "What he did in Anambra",
       points: [
-        "Anambra became the first state in Nigeria, and reportedly the first in Sub-Saharan Africa, to begin sub sovereign wealth savings.",
-        "The Debt Management Office rated Anambra the least indebted state in Nigeria during his administration.",
-        "He left approximately $150 million in savings in the state treasury at the end of his term, a figure no successor has matched.",
+        "Debt Management Office records show that Anambra still had domestic and external debt at the end of 2013; claims that the state was completely debt-free are inaccurate.",
+        "Obi has repeatedly said his administration left substantial cash and investments. Later fact-checks found that the popular $150 million or ₦75 billion versions cannot be fully established from public records, so this site treats the amount as disputed rather than settled fact.",
         "He coordinated aerial and poverty mapping of the state, using real data to plan infrastructure and social programmes rather than guessing.",
         "He refused to build a N500 million Presidential Lodge for a presidential visit. He vacated his own lodge for the week and stayed in a hotel himself.",
         "He attracted major private investment into the state while keeping its books clean, proving that governance quality is itself an economic input.",
@@ -271,7 +269,7 @@ export const sectors: Sector[] = [
     record: {
       headline: "What he did in Anambra",
       points: [
-        "His government developed more than 800 km of roads.",
+        "His administration reported completing more than 800 km of roads. The figure is retained as an attributed government claim while stronger project-by-project documentation is assembled.",
         "Road contractors were required to sign maintenance bonds committing them to maintain what they built for five to seven years after completion.",
         "He established the Anambra Road Maintenance Agency, so that maintaining roads had a permanent owner instead of being left to chance.",
         "He built new government secretariats and a consolidated Three Arms Zone, co-locating the executive, legislature and judiciary as long term institutional planning rather than short term visibility projects.",

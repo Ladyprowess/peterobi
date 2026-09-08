@@ -9,24 +9,19 @@ export function StatGrid({ stats, onGreen = false }: { stats: Stat[]; onGreen?: 
 
   return (
     <dl
-      className={`grid gap-px overflow-hidden rounded-xl ${
+      className={`grid grid-cols-2 gap-px overflow-hidden rounded-xl sm:grid-cols-4 ${
         onGreen ? "bg-white/20" : "bg-line"
       }`}
-      style={{
-        gridTemplateColumns: `repeat(auto-fit, minmax(${
-          stats.length > 2 ? "13rem" : "16rem"
-        }, 1fr))`,
-      }}
     >
       {stats.map((s) => (
         <div
           key={s.label}
-          className={`p-5 ${onGreen ? "bg-green-deep" : "bg-white"}`}
+          className={`p-4 sm:p-5 ${onGreen ? "bg-green-deep" : "bg-white"}`}
         >
-          <dt className="flex items-baseline gap-2">
+          <dt className="flex items-baseline gap-1.5 whitespace-nowrap sm:gap-2">
             {s.from && (
               <span
-                className={`tnum font-display text-xl font-medium line-through ${
+                className={`tnum font-display text-base font-medium line-through sm:text-lg ${
                   onGreen ? "text-white/45" : "text-line-strong"
                 }`}
               >
@@ -34,7 +29,7 @@ export function StatGrid({ stats, onGreen = false }: { stats: Stat[]; onGreen?: 
               </span>
             )}
             <span
-              className={`tnum font-display text-4xl font-semibold leading-none sm:text-5xl ${
+              className={`tnum font-display text-3xl font-semibold leading-none sm:text-4xl ${
                 onGreen ? "text-white" : "text-green"
               }`}
             >

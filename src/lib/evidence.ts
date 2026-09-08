@@ -54,6 +54,6 @@ export const evidence: EvidenceItem[] = [
 export const mediaItems = [
   { type: "photo" as const, sector: "Infrastructure", title: "Road conditions across Nigeria", description: "Before-and-after photographs, location, date captured and the road authority responsible.", image: "/images/media-bad-road.jpg" },
   { type: "video" as const, sector: "Health", title: "Inside local health facilities", description: "Short, permission-cleared videos showing staffing, power, water, equipment and patient access.", image: "/images/media-health-centre.jpg" },
-  { type: "photo" as const, sector: "Education", title: "The classroom reality", description: "Documented school conditions paired with enrolment and learning data—not images without context.", image: "/images/media-classroom.jpg" },
+  { type: "photo" as const, sector: "Education", title: "The classroom reality", description: "Documented school conditions paired with enrolment and learning datanot images without context.", image: "/images/media-classroom.jpg" },
   { type: "video" as const, sector: "Cost of living", title: "What families are paying", description: "Market visits, receipts and first-person accounts with dates so viewers can verify when prices changed.", image: "/images/media-market.jpg" },
 ];

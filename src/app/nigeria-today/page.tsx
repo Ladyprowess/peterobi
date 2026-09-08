@@ -9,7 +9,7 @@ export default function NigeriaTodayPage() {
   return <>
     <header className="on-green"><div className="mx-auto max-w-6xl px-4 py-16 md:px-6 lg:px-8 lg:py-24">
       <p className="eyebrow text-white/65">The case for change</p><h1 className="mt-4 max-w-4xl font-display text-5xl font-semibold leading-[1.02] text-white sm:text-6xl">Before asking for another term, government must answer for this one.</h1>
-      <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">This page focuses on outcomes—not insults, rumours or edited clips. Prices, security, schools, hospitals, roads, debt and the daily experience of Nigerians are the test.</p>
+      <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">This page focuses on outcomesnot insults, rumours or edited clips. Prices, security, schools, hospitals, roads, debt and the daily experience of Nigerians are the test.</p>
     </div></header>
     <section className="mx-auto max-w-6xl px-4 py-14 md:px-6 lg:px-8 lg:py-20"><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {sectors.map((sector) => { const Icon = sectorIcons[sector.icon]; return <Link key={sector.slug} href={`/${sector.slug}`} className="group rounded-2xl border border-line p-6 transition hover:-translate-y-0.5 hover:border-green hover:shadow-lg hover:shadow-green/5">

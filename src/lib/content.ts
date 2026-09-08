@@ -48,7 +48,7 @@ export const candidate = {
   /** Drop the file at public/images/peter-obi.jpg. */
   portrait: "/images/peter-obi.jpg",
   facts: [
-    { label: "Party", value: "Nigeria Democratic Congress" },
+    { label: "Background", value: "Business and banking" },
     { label: "Running mate", value: "Rabiu Kwankwaso" },
     { label: "Governed", value: "Anambra, 2006 to 2014" },
     { label: "Political Party", value: "NDC" },

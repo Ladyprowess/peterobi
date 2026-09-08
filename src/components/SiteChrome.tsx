@@ -4,7 +4,7 @@ import { candidate, sectors } from "@/lib/content";
 export function SiteHeader() {
   const primary = [
     { href: "/nigeria-today", label: "Nigeria today" },
-    { href: "/evidence", label: "Evidence" },
+    { href: "/evidence", label: "Why Obi" },
     { href: "/media", label: "Media" },
     { href: "/about", label: "Peter Obi" },
   ];

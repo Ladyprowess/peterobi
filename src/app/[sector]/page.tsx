@@ -83,11 +83,11 @@ export default async function SectorPage({ params }: PageProps<"/[sector]">) {
       <section className="mx-auto max-w-4xl px-4 pb-14 md:px-6 lg:px-8 lg:pb-20">
         <div className="rounded-2xl border border-line bg-gold-wash p-6 sm:flex sm:items-center sm:justify-between sm:gap-8 sm:p-8">
           <div>
-            <p className="eyebrow text-gold-deep">The Top 100 project</p>
-            <h2 className="mt-2 font-display text-2xl font-semibold text-green-ink">See every reason, organised by the problem it addresses.</h2>
-            <p className="mt-2 text-sm leading-relaxed text-soft">Each reason connects Peter Obi&apos;s Anambra record to a practical national question.</p>
+            <p className="eyebrow text-gold-deep">The record</p>
+            <h2 className="mt-2 font-display text-2xl font-semibold text-green-ink">See what Peter Obi delivered across Anambra State.</h2>
+            <p className="mt-2 text-sm leading-relaxed text-soft">Explore the issues that matter to you and see what better leadership can achieve.</p>
           </div>
-          <Link href="/evidence" className="mt-5 inline-flex shrink-0 items-center gap-2 rounded-full bg-ink px-5 py-3 text-sm font-bold text-white sm:mt-0">View all reasons <ArrowRight className="size-4" /></Link>
+          <Link href="/evidence" className="mt-5 inline-flex shrink-0 items-center gap-2 rounded-full bg-ink px-5 py-3 text-sm font-bold text-white sm:mt-0">Explore other issues <ArrowRight className="size-4" /></Link>
         </div>
       </section>
 

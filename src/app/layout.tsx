@@ -19,7 +19,7 @@ const newsreader = Newsreader({
 
 const title = "Obi 2027";
 const description =
-  "An independent, source-led case for Peter Obi in 2027: Nigeria today, his Anambra record, stated policies, evidence, images and videos.";
+  "Why Peter Obi should lead Nigeria in 2027. See Nigeria's challenges, his record in Anambra and what his leadership would mean for the country.";
 
 export const metadata: Metadata = {
   title: { default: "Obi 2027, A New Nigeria is POssible", template: "%s | Obi 2027" },

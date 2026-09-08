@@ -54,22 +54,26 @@ export const evidence: EvidenceItem[] = [
 export const mediaItems = [
   { type: "photo" as const, sector: "Infrastructure", title: "Road conditions across Nigeria", description: "Before-and-after photographs, location, date captured and the road authority responsible.", image: "/images/media-bad-road.jpg" },
   { type: "video" as const, sector: "Health", title: "Inside local health facilities", description: "Short, permission-cleared videos showing staffing, power, water, equipment and patient access.", image: "/images/media-health-centre.jpg" },
-  { type: "photo" as const, sector: "Education", title: "The classroom reality", description: "Documented school conditions paired with enrolment and learning datanot images without context.", image: "/images/media-classroom.jpg" },
+  { type: "photo" as const, sector: "Education", title: "The classroom reality", description: "Documented school conditions paired with enrolment and learning data, not images without context.", image: "/images/media-classroom.jpg" },
   { type: "video" as const, sector: "Cost of living", title: "What families are paying", description: "Market visits, receipts and first-person accounts with dates so viewers can verify when prices changed.", image: "/images/media-market.jpg" },
 ];
 
 export function mediaForSector(slug: string, name: string) {
-  const labels = slug === "health"
-    ? ["Primary healthcare today", "Hospital access", "The Anambra health record"]
+  const subjects = slug === "health"
+    ? { now: ["Inside Nigeria's hospitals", "Primary healthcare centres", "The people behind the numbers"], record: ["Anambra's hospital turnaround", "Maternal and child health", "Immunisation and ambulances"], future: ["Healthcare closer to home", "Keeping health workers in Nigeria", "Health insurance that reaches families"] }
     : slug === "education"
-      ? ["Classrooms today", "Children outside school", "The Anambra school turnaround"]
+      ? { now: ["Classrooms today", "Children outside school", "What teachers work with"], record: ["Schools returned to their owners", "Direct funding for schools", "Anambra's examination results"], future: ["Every child in school", "Better equipped classrooms", "Training that leads to work"] }
       : slug === "infrastructure"
-        ? ["Federal roads today", "Road damage and delays", "Road delivery in Anambra"]
-        : [`${name} today`, "The human impact", `The Anambra ${name.toLowerCase()} record`];
-  return labels.map((title, index) => ({
-    image: `/images/${slug}-${index + 1}.jpg`,
-    type: index === 1 ? "video" as const : "photo" as const,
-    title,
-    caption: index === 2 ? "Documented material from Peter Obi's Anambra record." : "Current Nigerian conditions, with location, date and original source to be confirmed before publication.",
-  }));
+        ? { now: ["The roads Nigerians use", "Damage, delays and lost income", "Communities cut off"], record: ["Road delivery in Anambra", "Maintenance after construction", "Connecting towns and markets"], future: ["Roads built to last", "Maintenance as a duty", "Infrastructure that supports production"] }
+        : { now: [`${name} in Nigeria today`, "The human impact", "What needs to change"], record: [`The Anambra ${name.toLowerCase()} record`, "The work on the ground", "The result for residents"], future: [`A national ${name.toLowerCase()} plan`, "What better delivery could look like", "From state experience to national action"] };
+
+  return (Object.keys(subjects) as Array<keyof typeof subjects>).flatMap((stage) =>
+    subjects[stage].map((title, index) => ({
+      stage,
+      image: `/images/${slug}-${stage}-${index + 1}.jpg`,
+      type: index === 1 ? "video" as const : "photo" as const,
+      title,
+      caption: stage === "now" ? "A closer look at what Nigerians experience today." : stage === "record" ? "A closer look at Peter Obi's record in Anambra State." : "What better national delivery would mean for Nigerians.",
+    })),
+  );
 }

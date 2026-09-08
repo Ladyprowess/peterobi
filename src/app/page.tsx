@@ -22,13 +22,13 @@ export default function Home() {
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/85">
-                This is the evidence-led case for Peter Obi: what Nigeria is living
-                through, what he delivered in Anambra, and what he says he will do
+                See what Nigeria is going through, what Peter Obi delivered in
+                Anambra, and what he says he will do
                 differently as president.
               </p>
 
               <p className="mt-4 max-w-xl text-lg font-semibold leading-relaxed text-white">
-                Read it. Check the sources. Decide for yourself.
+                Look at the record. Then decide.
               </p>
 
               <div className="mt-10 border-t border-white/20 pt-8">
@@ -65,7 +65,7 @@ export default function Home() {
 
       <section className="border-b border-line bg-ink text-white">
         <div className="mx-auto grid max-w-7xl gap-px bg-white/10 sm:grid-cols-3">
-          {[{ k: "THE PROBLEM", v: "Nigeria today", h: "/nigeria-today" }, { k: "THE ALTERNATIVE", v: "Obi's record", h: "/#issues" }, { k: "THE PROOF", v: "Sources and evidence", h: "/evidence" }].map((item) => <Link key={item.k} href={item.h} className="group bg-ink px-6 py-7 transition hover:bg-green-deep"><span className="eyebrow text-white/45">{item.k}</span><span className="mt-2 flex items-center justify-between font-display text-2xl">{item.v}<ArrowRight className="size-5 transition group-hover:translate-x-1" /></span></Link>)}
+          {[{ k: "THE REALITY", v: "Nigeria today", h: "/nigeria-today" }, { k: "THE RECORD", v: "What Obi has done", h: "/evidence" }, { k: "THE CHOICE", v: "A better Nigeria", h: "/#issues" }].map((item) => <Link key={item.k} href={item.h} className="group bg-ink px-6 py-7 transition hover:bg-green-deep"><span className="eyebrow text-white/45">{item.k}</span><span className="mt-2 flex items-center justify-between font-display text-2xl">{item.v}<ArrowRight className="size-5 transition group-hover:translate-x-1" /></span></Link>)}
         </div>
       </section>
 
@@ -87,8 +87,8 @@ export default function Home() {
 
       <section className="mx-auto max-w-6xl px-4 pb-16 md:px-6 lg:px-8 lg:pb-24">
         <div className="overflow-hidden rounded-3xl bg-gold-wash p-7 sm:p-10 lg:flex lg:items-end lg:justify-between lg:gap-12">
-          <div><p className="eyebrow text-gold-deep">Receipts, not rumours</p><h2 className="mt-3 max-w-2xl font-display text-3xl text-green-ink sm:text-4xl">A serious campaign should make its evidence easy to inspect.</h2><p className="mt-4 max-w-2xl leading-relaxed text-soft">Our evidence library separates government data, independent reporting, Peter Obi&apos;s public record and his future proposals.</p></div>
-          <Link href="/evidence" className="mt-7 inline-flex shrink-0 items-center gap-2 rounded-full bg-ink px-6 py-3.5 text-sm font-bold text-white lg:mt-0">Open evidence library <ArrowRight className="size-4" /></Link>
+          <div><p className="eyebrow text-gold-deep">A record Nigerians can judge</p><h2 className="mt-3 max-w-2xl font-display text-3xl text-green-ink sm:text-4xl">The problems are clear. What matters now is who has shown that he can solve them.</h2><p className="mt-4 max-w-2xl leading-relaxed text-soft">Choose an issue and compare Nigeria today with Peter Obi&apos;s record in Anambra.</p></div>
+          <Link href="/evidence" className="mt-7 inline-flex shrink-0 items-center gap-2 rounded-full bg-ink px-6 py-3.5 text-sm font-bold text-white lg:mt-0">See why Obi <ArrowRight className="size-4" /></Link>
         </div>
       </section>
 

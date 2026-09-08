@@ -47,12 +47,13 @@ export default function AboutPage() {
             ))}
           </div>
           <Figure
-            src={candidate.portrait}
-            alt={`Portrait of ${candidate.name}`}
+            src="/images/peter-obi-who-he-is.jpg"
+            alt={`${candidate.name} standing against a dark background`}
             fallback="PO"
-            aspect="aspect-square"
+            aspect="aspect-[2/3]"
             sizes="(min-width: 640px) 18rem, 100vw"
-            className="sm:order-2"
+            className="bg-[#111] sm:order-2"
+            imageClassName="object-contain"
           />
         </div>
 

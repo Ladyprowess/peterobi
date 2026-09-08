@@ -16,6 +16,7 @@ export function Figure({
   sizes = "(min-width: 1024px) 33vw, 100vw",
   priority = false,
   className = "",
+  imageClassName = "object-cover",
   rounded = "rounded-xl",
 }: {
   src: string;
@@ -26,6 +27,7 @@ export function Figure({
   sizes?: string;
   priority?: boolean;
   className?: string;
+  imageClassName?: string;
   rounded?: string;
 }) {
   const [failed, setFailed] = useState(false);
@@ -54,7 +56,7 @@ export function Figure({
         sizes={sizes}
         priority={priority}
         onError={() => setFailed(true)}
-        className="object-cover"
+        className={imageClassName}
       />
     </div>
   );

@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Obi 2027 civic campaign hub
+
+An independent, supporter-built Next.js site presenting Nigeria's current challenges, Peter Obi's public record, his stated proposals, supporting sources and documented media.
+
+The project is not an official campaign publication. Factual claims should be connected to primary documents or credible independent reporting in `src/lib/evidence.ts`.
 
 ## Getting Started
 

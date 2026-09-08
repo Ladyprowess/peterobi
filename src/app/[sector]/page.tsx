@@ -126,6 +126,17 @@ export default async function SectorPage({ params }: PageProps<"/[sector]">) {
       />
       <Block step="03" headline={sector.plan.headline} points={sector.plan.points} />
 
+      <section className="mx-auto max-w-4xl px-4 pb-14 md:px-6 lg:px-8 lg:pb-20">
+        <div className="rounded-2xl border border-line bg-gold-wash p-6 sm:flex sm:items-center sm:justify-between sm:gap-8 sm:p-8">
+          <div>
+            <p className="eyebrow text-gold-deep">Verification matters</p>
+            <h2 className="mt-2 font-display text-2xl font-semibold text-green-ink">Check the documents behind the campaign.</h2>
+            <p className="mt-2 text-sm leading-relaxed text-soft">Records, current conditions and future proposals are different types of claims. The evidence library labels them clearly.</p>
+          </div>
+          <Link href="/evidence" className="mt-5 inline-flex shrink-0 items-center gap-2 rounded-full bg-ink px-5 py-3 text-sm font-bold text-white sm:mt-0">View sources <ArrowRight className="size-4" /></Link>
+        </div>
+      </section>
+
       {/* Close ---------------------------------------------------------- */}
       <section className="on-green">
         <div className="mx-auto max-w-4xl px-4 py-12 md:px-6 lg:px-8 lg:py-14">

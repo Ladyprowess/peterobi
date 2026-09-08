@@ -24,6 +24,11 @@
   --line-strong: #b9cfc2;
 
   --gold: #b8860b;
+  --gold-deep: #765500;
+  --gold-wash: #fff8df;
+  --mint: #9af0bd;
+  --gold-wash: #f8f1dd;
+  --mint: #8ff0bd;
 }
 
 @theme inline {
@@ -40,6 +45,12 @@
   --color-line: var(--line);
   --color-line-strong: var(--line-strong);
   --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-gold-wash: var(--gold-wash);
+  --color-mint: var(--mint);
+  --color-gold-deep: var(--gold-deep);
+  --color-gold-wash: var(--gold-wash);
+  --color-mint: var(--mint);
 
   --font-display: var(--font-newsreader), Georgia, "Times New Roman", serif;
   --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
@@ -49,6 +60,14 @@ body {
   background: var(--page);
   color: var(--ink);
   font-family: var(--font-sans);
+}
+
+::selection { background: var(--mint); color: var(--green-ink); }
+
+.hero-grid {
+  background-color: var(--green-deep);
+  background-image: radial-gradient(circle at 88% 18%, rgba(143, 240, 189, .17), transparent 27%), linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+  background-size: auto, 42px 42px, 42px 42px;
 }
 
 .tnum {
@@ -87,8 +106,16 @@ body {
 
 /* Green blocks get their own link and rule colours. */
 .on-green {
-  background: var(--green-deep);
+  background: linear-gradient(135deg, #003b22 0%, var(--green-deep) 58%, #00683d 100%);
   color: var(--white);
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(135deg, rgba(0, 59, 34, 0.97), rgba(0, 81, 46, 0.92)),
+    linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+  background-size: auto, 44px 44px, 44px 44px;
 }
 
 :where(a, button, summary, [tabindex]):focus-visible {

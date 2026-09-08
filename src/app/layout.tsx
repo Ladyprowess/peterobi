@@ -19,12 +19,13 @@ const newsreader = Newsreader({
 
 const title = "Obi 2027";
 const description =
-  "Why Nigeria should vote Peter Obi in 2027. Eight years governing Anambra, sector by sector: health, education, the economy, security and infrastructure.";
+  "An independent, source-led case for Peter Obi in 2027: Nigeria today, his Anambra record, stated policies, evidence, images and videos.";
 
 export const metadata: Metadata = {
   title: { default: "Obi 2027, A New Nigeria is POssible", template: "%s | Obi 2027" },
   description,
   applicationName: title,
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://obi2027.ng"),
   openGraph: {
     title: "Obi 2027, A New Nigeria is POssible",
     description,

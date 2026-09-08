@@ -11,27 +11,24 @@ export default function Home() {
   return (
     <>
       {/* Hero ---------------------------------------------------------- */}
-      <section className="on-green">
-        <div className="mx-auto max-w-6xl px-4 py-14 md:px-6 lg:px-8 lg:py-20">
+      <section className="hero-grid on-green overflow-hidden">
+        <div className="mx-auto max-w-7xl px-4 py-14 md:px-6 lg:px-8 lg:py-24">
           <div className="grid gap-12 lg:grid-cols-[1.25fr_1fr] lg:gap-16">
             <div>
-              <p className="eyebrow text-white/70">
-                {candidate.partyShort} &middot; {candidate.electionLabel}
-              </p>
+              <p className="eyebrow text-white/70">An independent citizens&apos; campaign &middot; {candidate.electionLabel}</p>
 
               <h1 className="mt-4 font-display text-[2.75rem] font-semibold leading-[1.03] text-white sm:text-6xl lg:text-7xl">
-                A New Nigeria is POssible.
+                Nigeria can work.<br /><span className="text-mint">The record says so.</span>
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/85">
-                Peter Obi governed Anambra for eight years. He took its schools from
-                26th in the country to 1st, took its health system from no accredited
-                institution to polio free, built 800 km of roads that came with a
-                maintenance guarantee, and still left money in the treasury.
+                This is the documented case for Peter Obi: what Nigeria is living
+                through, what he delivered in Anambra, and what he says he will do
+                differently as president.
               </p>
 
               <p className="mt-4 max-w-xl text-lg font-semibold leading-relaxed text-white">
-                He did it for one state; he will do it for the country.
+                Read it. Check the sources. Decide for yourself.
               </p>
 
               <div className="mt-10 border-t border-white/20 pt-8">
@@ -48,7 +45,7 @@ export default function Home() {
             {/* Profile ------------------------------------------------- */}
             <aside
               aria-labelledby="profile-heading"
-              className="rounded-2xl bg-white p-6 sm:p-7"
+              className="relative rounded-3xl bg-white p-3 shadow-2xl shadow-black/15 sm:p-4"
             >
               <Figure
                 src={candidate.portrait}
@@ -57,39 +54,18 @@ export default function Home() {
                 aspect="aspect-square"
                 sizes="(min-width: 1024px) 26rem, 100vw"
                 priority
-                className="mb-6"
+                className="mb-0"
               />
-
-              <h2
-                id="profile-heading"
-                className="font-display text-3xl font-semibold leading-tight text-green-ink"
-              >
-                {candidate.name}
-              </h2>
-              <p className="mt-1.5 text-[14px] font-medium leading-snug text-soft">
-                {candidate.office}
-              </p>
-
-              <dl className="mt-6 grid grid-cols-2 gap-x-4 gap-y-5 border-t-2 border-line pt-6">
-                {candidate.facts.map((f) => (
-                  <div key={f.label}>
-                    <dt className="eyebrow text-green-mid">{f.label}</dt>
-                    <dd className="mt-1 text-[15px] font-bold leading-snug text-green-ink">
-                      {f.value}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-
-              <Link
-                href="/about"
-                className="mt-6 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-lg bg-green px-5 text-[15px] font-bold text-white transition-colors duration-100 ease-out hover:bg-green-mid active:translate-y-px"
-              >
-                Read his full record
-                <ArrowRight className="size-4" />
-              </Link>
+              <div className="p-4 sm:p-5"><p className="eyebrow text-green">The candidate</p><h2 id="profile-heading" className="mt-2 font-display text-3xl font-semibold leading-tight text-green-ink">{candidate.name}</h2><p className="mt-2 text-sm leading-relaxed text-soft">Former Governor of Anambra State · businessman · 2027 presidential candidate</p>
+              <Link href="/about" className="mt-5 inline-flex items-center gap-2 text-sm font-extrabold text-green">Meet Peter Obi <ArrowRight className="size-4" /></Link></div>
             </aside>
           </div>
+        </div>
+      </section>
+
+      <section className="border-b border-line bg-ink text-white">
+        <div className="mx-auto grid max-w-7xl gap-px bg-white/10 sm:grid-cols-3">
+          {[{ k: "THE PROBLEM", v: "Nigeria today", h: "/nigeria-today" }, { k: "THE ALTERNATIVE", v: "Obi's record", h: "/#issues" }, { k: "THE PROOF", v: "Sources and evidence", h: "/evidence" }].map((item) => <Link key={item.k} href={item.h} className="group bg-ink px-6 py-7 transition hover:bg-green-deep"><span className="eyebrow text-white/45">{item.k}</span><span className="mt-2 flex items-center justify-between font-display text-2xl">{item.v}<ArrowRight className="size-5 transition group-hover:translate-x-1" /></span></Link>)}
         </div>
       </section>
 
@@ -105,8 +81,15 @@ export default function Home() {
       </section>
 
       {/* Issue picker --------------------------------------------------- */}
-      <section className="mx-auto max-w-6xl px-4 pb-14 md:px-6 lg:px-8">
+      <section id="issues" className="mx-auto max-w-6xl scroll-mt-24 px-4 pb-14 md:px-6 lg:px-8">
         <IssuePicker />
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 pb-16 md:px-6 lg:px-8 lg:pb-24">
+        <div className="overflow-hidden rounded-3xl bg-gold-wash p-7 sm:p-10 lg:flex lg:items-end lg:justify-between lg:gap-12">
+          <div><p className="eyebrow text-gold-deep">Receipts, not rumours</p><h2 className="mt-3 max-w-2xl font-display text-3xl text-green-ink sm:text-4xl">A serious campaign should make its evidence easy to inspect.</h2><p className="mt-4 max-w-2xl leading-relaxed text-soft">Our evidence library separates government data, independent reporting, Peter Obi&apos;s public record and his future proposals.</p></div>
+          <Link href="/evidence" className="mt-7 inline-flex shrink-0 items-center gap-2 rounded-full bg-ink px-6 py-3.5 text-sm font-bold text-white lg:mt-0">Open evidence library <ArrowRight className="size-4" /></Link>
+        </div>
       </section>
 
       {/* All issues ----------------------------------------------------- */}

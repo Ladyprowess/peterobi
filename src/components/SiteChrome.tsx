@@ -2,9 +2,15 @@ import Link from "next/link";
 import { candidate, sectors } from "@/lib/content";
 
 export function SiteHeader() {
+  const primary = [
+    { href: "/nigeria-today", label: "Nigeria today" },
+    { href: "/evidence", label: "Evidence" },
+    { href: "/media", label: "Media" },
+    { href: "/about", label: "Peter Obi" },
+  ];
   return (
-    <header className="sticky top-0 z-40 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center gap-4 px-4 py-3 md:px-6 lg:px-8">
+    <header className="sticky top-0 z-40 border-b border-line bg-white/95 backdrop-blur">
+      <div className="mx-auto flex max-w-7xl items-center gap-4 px-4 py-3 md:px-6 lg:px-8">
         <Link href="/" className="flex shrink-0 items-center gap-2.5">
           <span
             aria-hidden="true"
@@ -12,34 +18,31 @@ export function SiteHeader() {
           >
             PO
           </span>
-          <span className="hidden font-display text-lg font-semibold leading-tight text-green-ink sm:block">
-            Obi 2027
-          </span>
+          <span className="font-display text-lg font-semibold leading-tight text-green-ink">Obi 2027</span>
         </Link>
 
         <nav
           aria-label="Issues"
           className="-mx-2 flex min-w-0 flex-1 gap-0.5 overflow-x-auto px-2"
         >
-          {sectors.slice(0, 6).map((s) => (
+          {primary.map((item) => (
             <Link
-              key={s.slug}
-              href={`/${s.slug}`}
+              key={item.href}
+              href={item.href}
               className="shrink-0 rounded-md px-2.5 py-2 text-[13px] font-semibold text-soft transition-colors duration-100 ease-out hover:bg-tint hover:text-green-mid"
             >
-              {s.name}
+              {item.label}
             </Link>
           ))}
         </nav>
 
         <Link
-          href="/about"
-          className="hidden shrink-0 rounded-md bg-green px-4 py-2.5 text-[13px] font-bold text-white transition-colors duration-100 ease-out hover:bg-green-mid active:translate-y-px sm:block"
+          href="/#issues"
+          className="hidden shrink-0 rounded-full bg-green px-5 py-2.5 text-[13px] font-bold text-white transition-colors duration-100 ease-out hover:bg-green-mid active:translate-y-px sm:block"
         >
-          Why Obi
+          Explore the record
         </Link>
       </div>
-      <div className="flagrule" />
     </header>
   );
 }
@@ -74,9 +77,10 @@ export function SiteFooter() {
           </nav>
 
           <p className="mt-8 max-w-prose border-t border-white/20 pt-6 text-[12px] leading-relaxed text-white/70">
-            An independent project by supporters. Not published, funded or authorised
-            by Peter Obi, the Nigeria Democratic Congress, or any campaign
-            organisation.
+            An independent civic campaign by supporters. It is not published, funded
+            or authorised by Peter Obi, the Nigeria Democratic Congress, INEC or any
+            official campaign organisation. Claims should be checked through the
+            linked primary documents and independent reports.
           </p>
         </div>
       </div>

@@ -31,7 +31,7 @@ export default function Home() {
               </p>
 
               <p className="mt-4 max-w-xl text-lg font-semibold leading-relaxed text-white">
-                He did it for one state. Give him the country.
+                He did it for one state; he will do it for the country.
               </p>
 
               <div className="mt-10 border-t border-white/20 pt-8">

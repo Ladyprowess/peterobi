@@ -83,8 +83,8 @@ export default function Home() {
           A New Nigeria is POssible
         </h2>
         <p className="mt-5 max-w-prose text-lg leading-relaxed text-soft">
-          Nigeria has had promises for decades. Peter Obi has a record. Send this to
-          the people still deciding, and vote on {candidate.electionLabel}.
+          Nigeria has had promises for decades. Peter Obi will fulfill those
+          promises.
         </p>
         <ShareRow
           className="mt-7"

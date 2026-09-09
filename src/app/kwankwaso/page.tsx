@@ -52,13 +52,12 @@ export default function KwankwasoPage() {
 
       <section className="mx-auto grid max-w-5xl gap-10 px-4 py-12 md:px-6 lg:grid-cols-[20rem_1fr] lg:px-8 lg:py-16">
         <Figure
-          src="/images/obi-kwankwaso-hero.webp"
-          alt="Rabiu Musa Kwankwaso with Peter Obi"
+          src="/images/kwankwaso.jpg"
+          alt="Senator Rabiu Musa Kwankwaso"
           fallback="RMK"
-          aspect="aspect-[3/4]"
+          aspect="aspect-[4/5]"
           sizes="(min-width: 1024px) 20rem, 100vw"
           className="bg-green-deep"
-          imageClassName="object-cover object-right"
         />
 
         <div>

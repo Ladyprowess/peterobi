@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { candidate, headlineStats, sectors } from "@/lib/content";
+import { CandidateProfile } from "@/components/CandidateProfile";
 import { Figure } from "@/components/Figure";
 import { Countdown } from "@/components/Countdown";
 import { IssuePicker } from "@/components/IssuePicker";
@@ -15,7 +16,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 py-14 md:px-6 lg:px-8 lg:py-24">
           <div className="grid gap-12 lg:grid-cols-[1.25fr_1fr] lg:gap-16">
             <div>
-              <p className="eyebrow text-white/70">An independent citizens&apos; campaign &middot; {candidate.electionLabel}</p>
+              <p className="eyebrow text-white/70">{candidate.electionLabel}</p>
 
               <h1 className="mt-4 font-display text-[2.75rem] font-semibold leading-[1.03] text-white sm:text-6xl lg:text-7xl">
                 Nigeria can work.<br /><span className="text-mint">The record says so.</span>
@@ -43,26 +44,7 @@ export default function Home() {
             </div>
 
             {/* Profile ------------------------------------------------- */}
-            <aside
-              aria-labelledby="profile-heading"
-              className="relative rounded-3xl bg-white p-3 shadow-2xl shadow-black/15 sm:p-4"
-            >
-              <Figure
-                src="/images/obi-kwankwaso-hero.png"
-                alt="Peter Obi and Rabiu Musa Kwankwaso"
-                fallback="PO · RMK"
-                aspect="aspect-square"
-                sizes="(min-width: 1024px) 26rem, 100vw"
-                priority
-                className="mb-0"
-              />
-              <div className="p-4 sm:p-5"><p className="eyebrow text-green">The candidates</p><h2 id="profile-heading" className="mt-2 font-display text-3xl font-semibold leading-tight text-green-ink">{candidate.name}</h2><p className="mt-2 text-sm leading-relaxed text-soft">Former Governor of Anambra State · businessman · 2027 presidential candidate</p>
-                <div className="mt-5 border-t border-line pt-4">
-                  <h3 className="font-display text-xl font-semibold leading-tight text-green-ink">{candidate.runningMate}</h3>
-                  <p className="mt-1.5 text-sm leading-relaxed text-soft">Former Governor of Kano State · 2027 vice presidential candidate</p>
-                </div>
-              <Link href="/about" className="mt-5 inline-flex items-center gap-2 text-sm font-extrabold text-green">Meet the candidates <ArrowRight className="size-4" /></Link></div>
-            </aside>
+            <CandidateProfile />
           </div>
         </div>
       </section>

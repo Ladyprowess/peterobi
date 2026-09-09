@@ -11,11 +11,15 @@ const profiles = {
     name: candidate.name,
     summary:
       "Former Governor of Anambra State · businessman · 2027 presidential candidate",
+    href: "/about",
+    linkLabel: "Meet Peter Obi",
   },
   kwankwaso: {
     name: candidate.runningMate,
     summary:
       "Former Governor of Kano State · former senator · 2027 vice presidential candidate",
+    href: "/kwankwaso",
+    linkLabel: "Meet Kwankwaso",
   },
 } as const;
 
@@ -74,14 +78,12 @@ export function CandidateProfile() {
           </h2>
           <p className="mt-2 text-sm leading-relaxed text-soft">{profile.summary}</p>
 
-          {selected === "obi" && (
-            <Link
-              href="/about"
-              className="mt-5 inline-flex items-center gap-2 text-sm font-extrabold text-green"
-            >
-              Meet Peter Obi <ArrowRight className="size-4" />
-            </Link>
-          )}
+          <Link
+            href={profile.href}
+            className="mt-5 inline-flex items-center gap-2 text-sm font-extrabold text-green"
+          >
+            {profile.linkLabel} <ArrowRight className="size-4" />
+          </Link>
         </div>
       </div>
     </aside>

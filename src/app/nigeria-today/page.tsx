@@ -14,7 +14,7 @@ export default function NigeriaTodayPage() {
     <section className="mx-auto max-w-6xl px-4 py-14 md:px-6 lg:px-8 lg:py-20"><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {sectors.map((sector) => { const Icon = sectorIcons[sector.icon]; return <Link key={sector.slug} href={`/${sector.slug}`} className="group rounded-2xl border border-line p-6 transition hover:-translate-y-0.5 hover:border-green hover:shadow-lg hover:shadow-green/5">
         <span className="grid size-11 place-items-center rounded-xl bg-tint text-green"><Icon className="size-6" /></span><h2 className="mt-5 font-display text-2xl font-semibold text-green-ink">{sector.name}</h2>
-        <p className="mt-2 text-sm leading-relaxed text-soft">{sector.now.points[0]}</p><span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-green">Inspect the issue <ArrowRight className="size-4 transition group-hover:translate-x-1" /></span>
+        <p className="mt-2 text-sm leading-relaxed text-soft">{sector.now.points[0]}</p><span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-green">See More <ArrowRight className="size-4 transition group-hover:translate-x-1" /></span>
       </Link>; })}
     </div></section>
   </>;

@@ -45,7 +45,7 @@ export default function KwankwasoPage() {
             Senator Rabiu Musa Kwankwaso
           </h1>
           <p className="mt-4 max-w-3xl text-xl leading-relaxed text-white/90">
-            Candidate for Vise-President of the Federal Republic of Nigeria
+            Candidate for Vice-President of the Federal Republic of Nigeria
           </p>
         </div>
       </header>

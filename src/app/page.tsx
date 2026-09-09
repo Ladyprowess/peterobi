@@ -80,7 +80,7 @@ export default function Home() {
       {/* Close ---------------------------------------------------------- */}
       <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 lg:px-8 lg:py-20">
         <h2 className="max-w-3xl font-display text-4xl leading-[1.1] text-green-ink sm:text-5xl">
-          One state proved it. Now the country.
+          A New Nigeria is POssible
         </h2>
         <p className="mt-5 max-w-prose text-lg leading-relaxed text-soft">
           Nigeria has had promises for decades. Peter Obi has a record. Send this to

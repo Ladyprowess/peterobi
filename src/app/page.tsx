@@ -1,12 +1,11 @@
 import Link from "next/link";
-import { candidate, headlineStats, sectors } from "@/lib/content";
+import { candidate, headlineStats } from "@/lib/content";
 import { CandidateProfile } from "@/components/CandidateProfile";
-import { Figure } from "@/components/Figure";
 import { Countdown } from "@/components/Countdown";
 import { IssuePicker } from "@/components/IssuePicker";
 import { ShareRow } from "@/components/Share";
 import { StatGrid } from "@/components/Stats";
-import { ArrowRight, sectorIcons } from "@/components/Icons";
+import { ArrowRight } from "@/components/Icons";
 
 export default function Home() {
   return (
@@ -75,56 +74,6 @@ export default function Home() {
         <div className="overflow-hidden rounded-3xl bg-gold-wash p-7 sm:p-10 lg:flex lg:items-end lg:justify-between lg:gap-12">
           <div><p className="eyebrow text-gold-deep">A record Nigerians can judge</p><h2 className="mt-3 max-w-2xl font-display text-3xl text-green-ink sm:text-4xl">The problems are clear. What matters now is who has shown that he can solve them.</h2><p className="mt-4 max-w-2xl leading-relaxed text-soft">Peter Obi has proven that he can do it.</p></div>
           <Link href="/evidence" className="mt-7 inline-flex shrink-0 items-center gap-2 rounded-full bg-ink px-6 py-3.5 text-sm font-bold text-white lg:mt-0">See why Obi <ArrowRight className="size-4" /></Link>
-        </div>
-      </section>
-
-      {/* All issues ----------------------------------------------------- */}
-      <section className="bg-tint">
-        <div className="mx-auto max-w-6xl px-4 py-14 md:px-6 lg:px-8 lg:py-20">
-          <div className="flagrule-sm" />
-          <h2 className="mt-5 font-display text-3xl leading-tight text-green-ink sm:text-4xl">
-            The record
-          </h2>
-          <p className="mt-2.5 max-w-prose text-[16px] leading-relaxed text-soft">
-            Every page follows the same three questions: where Nigeria stands today,
-            what Peter Obi did in Anambra, and what he will do as president.
-          </p>
-
-          <ul className="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {sectors.map((s) => {
-              const Icon = sectorIcons[s.icon];
-              return (
-                <li key={s.slug}>
-                  <Link
-                    href={`/${s.slug}`}
-                    className="group flex h-full flex-col overflow-hidden rounded-xl border-2 border-transparent bg-white transition-colors duration-100 ease-out hover:border-green"
-                  >
-                    <Figure
-                      src={s.image}
-                      alt=""
-                      fallback={s.name.slice(0, 2).toUpperCase()}
-                      aspect="aspect-[16/9]"
-                      sizes="(min-width: 1024px) 22rem, (min-width: 640px) 50vw, 100vw"
-                      rounded="rounded-none"
-                    />
-                    <span className="mt-5 ml-6 grid size-11 place-items-center rounded-lg bg-tint text-green">
-                      <Icon className="size-6" />
-                    </span>
-                    <span className="mt-4 px-6 font-display text-2xl font-semibold leading-tight text-green-ink">
-                      {s.name}
-                    </span>
-                    <span className="mt-2 flex-1 px-6 text-[14px] leading-relaxed text-soft">
-                      {s.tagline}
-                    </span>
-                    <span className="mt-4 mb-6 inline-flex items-center gap-1.5 px-6 text-[14px] font-bold text-green">
-                      See the record
-                      <ArrowRight className="size-4 transition-transform duration-150 ease-out group-hover:translate-x-1" />
-                    </span>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
         </div>
       </section>
 

@@ -38,9 +38,9 @@ export const sources: Record<string, Source> = {
 
 export const evidence: EvidenceItem[] = [
   { id: "anambra-savings-total", sector: "Economy", claim: "He left $150 million and \u20a636 billion in state savings in 2014.", context: "Reported by The Punch.", status: "record", sourceIds: ["obiSavingsDefence"] },
-  { id: "anambra-no-debt", sector: "Economy", claim: "He left no debt and owed no contractor, supplier, salary or pension.", context: "Reported by The Punch.", status: "record", sourceIds: ["obiSavingsDefence"] },
-  { id: "anambra-savings-held", sector: "Economy", claim: "He held the savings in standard bonds and accounts at known public rates.", context: "Reported by The Punch.", status: "record", sourceIds: ["obiSavingsDefence"] },
-  { id: "anambra-handover", sector: "Economy", claim: "He left the handover notes open for anyone to verify.", context: "Reported by The Punch.", status: "record", sourceIds: ["obiSavingsDefence"] },
+  { id: "anambra-no-debt", sector: "Economy", claim: "No debt, and nothing owed to any contractor, supplier, salary or pension.", context: "Reported by The Punch.", status: "record", sourceIds: ["obiSavingsDefence"] },
+  { id: "anambra-savings-held", sector: "Economy", claim: "The savings sat in standard bonds and accounts at known public rates.", context: "Reported by The Punch.", status: "record", sourceIds: ["obiSavingsDefence"] },
+  { id: "anambra-handover", sector: "Economy", claim: "The handover notes are open for anyone to verify.", context: "Reported by The Punch.", status: "record", sourceIds: ["obiSavingsDefence"] },
   { id: "anambra-education", sector: "Education", claim: "He took Anambra from 26th of 36 states to 1st in WAEC.", context: "He sent grants straight to schools, returned schools to their owners and put ICT in classrooms.", status: "record", sourceIds: ["educationStudy"] },
   { id: "anambra-immunisation", sector: "Health", claim: "He won Anambra a \u20a6120 million award for polio eradication and immunisation.", context: "The state matched it with funding for maternal and child health centres.", status: "record", sourceIds: ["gatesAward", "gatesAwardDetail"] },
   { id: "anambra-roads", sector: "Infrastructure", claim: "He built over 800 kilometres of roads.", context: "Contractors signed maintenance bonds covering five to seven years after completion.", status: "record", sourceIds: ["roadReport"] },

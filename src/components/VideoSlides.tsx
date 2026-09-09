@@ -103,7 +103,7 @@ export function VideoSlides() {
 
       <div className="mt-5 flex flex-wrap items-center justify-between gap-4">
         <p className="tnum text-[13px] font-bold text-green-ink" aria-live="polite">
-          Clip {index + 1} of {slides.length}
+          {index + 1} of {slides.length}
         </p>
 
         <div className="flex items-center gap-2">
@@ -113,7 +113,7 @@ export function VideoSlides() {
                 key={slide.src}
                 type="button"
                 onClick={() => goTo(i)}
-                aria-label={`Go to clip ${i + 1}`}
+                aria-label={`Go to ${i + 1}`}
                 aria-current={i === index ? "true" : undefined}
                 className="grid size-8 place-items-center"
               >

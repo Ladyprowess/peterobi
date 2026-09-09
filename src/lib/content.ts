@@ -89,9 +89,9 @@ export const sectors: Sector[] = [
       points: [
         "85 percent of primary health centres lack doctors, nurses, clean water or working laboratories.",
         "Over 50,000 Nigerian trained doctors now practise abroad.",
-        "The doctor to patient ratio sits far below the WHO minimum.",
-        "Resident doctors strike again each time government breaks an agreement it signed.",
-        "Health takes 4 percent of the federal budget. Nigeria pledged 15.",
+        "There is roughly one doctor for every 2,500 Nigerians.",
+        "Doctors go on strike again every time government breaks a deal it signed with them.",
+        "Nigeria promised to spend 15 percent of its budget on health. It spends about 4 percent.",
       ],
     },
     record: {

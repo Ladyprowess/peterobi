@@ -31,7 +31,7 @@ export function CandidateProfile() {
       className="relative rounded-3xl bg-white p-3 shadow-2xl shadow-black/15 sm:p-4"
     >
       <Figure
-        src="/images/obi-kwankwaso-hero.png"
+        src="/images/obi-kwankwaso-hero.webp"
         alt="Peter Obi and Rabiu Musa Kwankwaso"
         fallback="PO · RMK"
         aspect="aspect-square"

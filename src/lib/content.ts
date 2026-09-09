@@ -175,8 +175,8 @@ export const sectors: Sector[] = [
     intro:
       "Obi ran Anambra like a business that intended to still exist in twenty years. He saved, he refused to borrow recklessly, and he left money in the treasury.",
     stats: [
-      { value: "₦3.03bn", label: "Domestic debt recorded by DMO at December 2013" },
-      { value: "$30.3m", label: "External debt recorded by DMO at December 2013" },
+      { value: "₦500m", label: "Presidential lodge he refused to build" },
+      { value: "2", label: "Major manufacturers brought into the state" },
     ],
     now: {
       headline: "Where Nigeria stands today",

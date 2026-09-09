@@ -123,7 +123,7 @@ export const sectors: Sector[] = [
   {
     slug: "education",
     name: "Education",
-    concern: "Schools that teach, and money that arrives",
+    concern: "Schools that teach, and conducive environment for kids",
     icon: "education",
     image: "/images/education.jpg",
     tagline: "From 26th of 36 states to first in the country.",
@@ -288,7 +288,7 @@ export const sectors: Sector[] = [
   {
     slug: "governance",
     name: "Governance",
-    concern: "Whether the person in the office can be trusted",
+    concern: "Accountable Governance process",
     icon: "governance",
     image: "/images/governance.jpg",
     tagline: "He took his mandate back through the courts, not the street.",
@@ -365,7 +365,7 @@ export const sectors: Sector[] = [
   {
     slug: "welfare",
     name: "Social welfare",
-    concern: "Children, and the people at the bottom",
+    concern: "Children, and the low class-citizen",
     icon: "welfare",
     image: "/images/welfare.jpg",
     tagline: "Human capital first, without abandoning fiscal discipline.",

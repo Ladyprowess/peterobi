@@ -65,7 +65,7 @@ export const headlineStats: Stat[] = [
   { value: "1st", from: "26th", label: "National WAEC ranking, from 26th of 36 states" },
   { value: "12+", from: "0", label: "Accredited health institutions, from none in 2006" },
   { value: "5 yrs", label: "Consecutive polio free years in Anambra" },
-  { value: "800km", label: "Roads reported completed by the administration" },
+  { value: "800km", label: "Roads completed by the administration" },
 ];
 
 export const sectors: Sector[] = [

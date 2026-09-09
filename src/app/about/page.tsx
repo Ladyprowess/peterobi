@@ -91,7 +91,7 @@ export default function AboutPage() {
 
       <section className="mx-auto max-w-4xl px-4 py-12 md:px-6 lg:px-8 lg:py-16">
         <h2 className="font-display text-3xl leading-tight text-green-ink sm:text-4xl">
-          Go deeper, issue by issue
+          Go deeper
         </h2>
         <ul className="mt-7 grid gap-3 sm:grid-cols-2">
           {sectors.map((s) => (

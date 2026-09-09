@@ -73,7 +73,7 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-4 py-14 md:px-6 lg:px-8 lg:py-16">
         <div className="flagrule-sm" />
         <h2 className="mt-5 font-display text-3xl leading-tight text-green-ink sm:text-4xl">
-          Eight years in Anambra, in four numbers
+          Eight years in Anambra
         </h2>
         <div className="mt-8 rounded-xl border border-line">
           <StatGrid stats={headlineStats} />
@@ -97,7 +97,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 py-14 md:px-6 lg:px-8 lg:py-20">
           <div className="flagrule-sm" />
           <h2 className="mt-5 font-display text-3xl leading-tight text-green-ink sm:text-4xl">
-            The record, issue by issue
+            The record
           </h2>
           <p className="mt-2.5 max-w-prose text-[16px] leading-relaxed text-soft">
             Every page follows the same three questions: where Nigeria stands today,

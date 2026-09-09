@@ -23,9 +23,10 @@ export default function Home() {
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/85">
-                See what Nigeria is going through, what Peter Obi delivered in
-                Anambra, and what he says he will do
-                differently as president.
+                The naira buys less every month, prices outrun wages, and Nigeria
+                borrows more each year just to stand still. Peter Obi would rebuild
+                the economy around producing what we consume, and he has eight years
+                of governing to show he means it.
               </p>
 
               <p className="mt-4 max-w-xl text-lg font-semibold leading-relaxed text-white">

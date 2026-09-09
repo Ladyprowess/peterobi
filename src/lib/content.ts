@@ -44,7 +44,7 @@ export const candidate = {
   partyShort: "NDC",
   runningMate: "Senator Rabiu Musa Kwankwaso",
   slogan: "A New Nigeria is POssible",
-  electionLabel: "Saturday 16 January 2027",
+  electionLabel: "A New Nigeria is POssible",
   /** Drop the file at public/images/peter-obi.jpg. */
   portrait: "/images/peter-obi.jpg",
   facts: [

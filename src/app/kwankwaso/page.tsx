@@ -45,7 +45,7 @@ export default function KwankwasoPage() {
             Senator Rabiu Musa Kwankwaso
           </h1>
           <p className="mt-4 max-w-3xl text-xl leading-relaxed text-white/90">
-            Engineer · two term Governor of Kano State · former Defence Minister · former Senator
+            Candidate for Vise-President of the Federal Republic of Nigeria
           </p>
         </div>
       </header>

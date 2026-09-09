@@ -45,7 +45,7 @@ export function Countdown({ onGreen = false }: { onGreen?: boolean }) {
   return (
     <div>
       <p className={`eyebrow ${onGreen ? "text-white/70" : "text-green-mid"}`}>
-        Polls open in
+        Election in
       </p>
       <div className="mt-2.5 flex items-end gap-5 sm:gap-7">
         {units.map(([label, value]) => (

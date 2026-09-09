@@ -56,8 +56,12 @@ export default function Home() {
                 priority
                 className="mb-0"
               />
-              <div className="p-4 sm:p-5"><p className="eyebrow text-green">The candidate</p><h2 id="profile-heading" className="mt-2 font-display text-3xl font-semibold leading-tight text-green-ink">{candidate.name}</h2><p className="mt-2 text-sm leading-relaxed text-soft">Former Governor of Anambra State · businessman · 2027 presidential candidate</p>
-              <Link href="/about" className="mt-5 inline-flex items-center gap-2 text-sm font-extrabold text-green">Meet Peter Obi <ArrowRight className="size-4" /></Link></div>
+              <div className="p-4 sm:p-5"><p className="eyebrow text-green">The candidates</p><h2 id="profile-heading" className="mt-2 font-display text-3xl font-semibold leading-tight text-green-ink">{candidate.name}</h2><p className="mt-2 text-sm leading-relaxed text-soft">Former Governor of Anambra State · businessman · 2027 presidential candidate</p>
+                <div className="mt-5 border-t border-line pt-4">
+                  <h3 className="font-display text-xl font-semibold leading-tight text-green-ink">{candidate.runningMate}</h3>
+                  <p className="mt-1.5 text-sm leading-relaxed text-soft">Former Governor of Kano State · 2027 vice presidential candidate</p>
+                </div>
+              <Link href="/about" className="mt-5 inline-flex items-center gap-2 text-sm font-extrabold text-green">Meet the candidates <ArrowRight className="size-4" /></Link></div>
             </aside>
           </div>
         </div>

@@ -65,7 +65,7 @@ export const headlineStats: Stat[] = [
   { value: "1st", from: "26th", label: "National WAEC ranking, from 26th of 36 states" },
   { value: "12+", from: "0", label: "Accredited health institutions, from none in 2006" },
   { value: "5 yrs", label: "Consecutive polio free years in Anambra" },
-  { value: "800km", label: "Roads completed by the administration" },
+  { value: "800km+", label: "Roads completed by the administration" },
 ];
 
 export const sectors: Sector[] = [
@@ -256,7 +256,7 @@ export const sectors: Sector[] = [
     intro:
       "Nigerian roads fail because nobody owns them after the ribbon is cut. Obi fixed that in Anambra with a contract clause that cost the state nothing.",
     stats: [
-      { value: "800km", label: "Roads developed" },
+      { value: "800km+", label: "Roads developed" },
       { value: "5 to 7", label: "Years of contractor maintenance, bonded" },
     ],
     now: {
@@ -409,4 +409,42 @@ export const caseFor2027 = [
   "His platform ties that record directly to a promise to cut the cost of national governance, and to move Nigeria from consuming to producing.",
   "He treats corruption and government waste as the central obstacle to development, and he campaigns with specific, checkable numbers rather than slogans.",
   "He stands on the Nigeria Democratic Congress ticket with Senator Rabiu Kwankwaso, pairing the South East and the North West on one ballot line.",
+];
+
+export type VideoSlide = {
+  src: string;
+  poster: string;
+  /**
+   * Describes only what is visibly in the footage. Do not add a place, a date
+   * or a cause that the clip does not actually show.
+   */
+  caption: string;
+};
+
+export const currentStateVideos: VideoSlide[] = [
+  {
+    src: "/videos/1.mp4",
+    poster: "/videos/1.jpg",
+    caption: "Refuse left uncollected in the open.",
+  },
+  {
+    src: "/videos/4.mp4",
+    poster: "/videos/4.jpg",
+    caption: "Traders working under a flyover, surrounded by refuse.",
+  },
+  {
+    src: "/videos/5.mp4",
+    poster: "/videos/5.jpg",
+    caption: "A truck pushing through a flooded road.",
+  },
+  {
+    src: "/videos/3.mp4",
+    poster: "/videos/3.jpg",
+    caption: "Police officers struggling with a man in the street.",
+  },
+  {
+    src: "/videos/2.mp4",
+    poster: "/videos/2.jpg",
+    caption: "Roadside life on the edge of a main road.",
+  },
 ];

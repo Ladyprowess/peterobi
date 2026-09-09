@@ -4,6 +4,7 @@ import { CandidateProfile } from "@/components/CandidateProfile";
 import { Countdown } from "@/components/Countdown";
 import { IssuePicker } from "@/components/IssuePicker";
 import { ShareRow } from "@/components/Share";
+import { VideoSlides } from "@/components/VideoSlides";
 import { StatGrid } from "@/components/Stats";
 import { ArrowRight } from "@/components/Icons";
 
@@ -74,6 +75,19 @@ export default function Home() {
         <div className="overflow-hidden rounded-3xl bg-gold-wash p-7 sm:p-10 lg:flex lg:items-end lg:justify-between lg:gap-12">
           <div><p className="eyebrow text-gold-deep">A record Nigerians can judge</p><h2 className="mt-3 max-w-2xl font-display text-3xl text-green-ink sm:text-4xl">The problems are clear. What matters now is who has shown that he can solve them.</h2><p className="mt-4 max-w-2xl leading-relaxed text-soft">Peter Obi has proven that he can do it.</p></div>
           <Link href="/evidence" className="mt-7 inline-flex shrink-0 items-center gap-2 rounded-full bg-ink px-6 py-3.5 text-sm font-bold text-white lg:mt-0">See why Obi <ArrowRight className="size-4" /></Link>
+        </div>
+      </section>
+
+      {/* Current State of Nigeria --------------------------------------- */}
+      <section className="bg-tint">
+        <div className="mx-auto max-w-6xl px-4 py-14 md:px-6 lg:px-8 lg:py-20">
+          <div className="flagrule-sm" />
+          <h2 className="mt-5 font-display text-3xl leading-tight text-green-ink sm:text-4xl">
+            Current State of Nigeria
+          </h2>
+          <div className="mt-8">
+            <VideoSlides />
+          </div>
         </div>
       </section>
 

@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Original camera files. Kept on disk as masters, but far too heavy for git.
+# The web versions live in public/videos/ and are committed.
+/public/images/videos/

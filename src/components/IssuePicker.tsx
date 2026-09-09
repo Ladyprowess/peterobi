@@ -32,11 +32,11 @@ export function IssuePicker() {
     <div className="rounded-2xl border-2 border-green bg-white p-6 sm:p-8">
       <div className="flagrule-sm" />
       <h2 className="mt-4 font-display text-3xl leading-tight text-green-ink sm:text-4xl">
-        What matters most to you?
+        The Problem of Nigeria Today!
       </h2>
       <p className="mt-2.5 max-w-prose text-[16px] leading-relaxed text-soft">
-        Pick up to three. We will take you straight to what Peter Obi did about them
-        in Anambra, and what he will do about them for Nigeria.
+        Pick up to three. You will see how Peter Obi solved these same problems in
+        Anambra, and what he would do differently for Nigeria today.
       </p>
 
       <fieldset className="mt-6">

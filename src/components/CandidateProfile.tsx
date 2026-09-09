@@ -69,7 +69,7 @@ export function CandidateProfile() {
           </div>
         </div>
 
-        <div className="min-h-[9rem]">
+        <div>
           <h2
             id="profile-heading"
             className="mt-4 font-display text-3xl font-semibold leading-tight text-green-ink"

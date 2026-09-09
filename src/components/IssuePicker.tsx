@@ -35,8 +35,7 @@ export function IssuePicker() {
         The Problem of Nigeria Today!
       </h2>
       <p className="mt-2.5 max-w-prose text-[16px] leading-relaxed text-soft">
-        How Peter has solved these problems in Anambra and what it can do
-        differently today.
+        How Peter Obi has solved these problems and why he should be voted in.
       </p>
 
       <fieldset className="mt-6">

@@ -23,13 +23,13 @@ export default function Home() {
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/85">
-                Nigeria is in a critical state, and only a competent hand can steady
+                Nigeria is currently in a critical state, and only a competent hand can steady
                 it now. Peter Obi governed Anambra for eight years and proved there
                 that he is that hand.
               </p>
 
               <p className="mt-4 max-w-xl text-lg font-semibold leading-relaxed text-white">
-                Look at the record. Then decide.
+                The record speaks for itself!
               </p>
 
               <div className="mt-10 border-t border-white/20 pt-8">

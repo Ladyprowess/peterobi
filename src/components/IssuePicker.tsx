@@ -35,7 +35,7 @@ export function IssuePicker() {
         The Problem of Nigeria Today!
       </h2>
       <p className="mt-2.5 max-w-prose text-[16px] leading-relaxed text-soft">
-        How Peter Obi has solved these problems and why he should be voted in.
+        The solution lies with Peter Obi.
       </p>
 
       <fieldset className="mt-6">

@@ -437,4 +437,8 @@ export const currentStateVideos: VideoSlide[] = [
     src: "/videos/2.mp4",
     poster: "/videos/2.jpg",
   },
+  {
+    src: "/videos/6.mp4",
+    poster: "/videos/6.jpg",
+  },
 ];

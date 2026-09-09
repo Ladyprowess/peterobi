@@ -78,7 +78,7 @@ export default async function SectorPage({ params }: PageProps<"/[sector]">) {
         </div>
       )}
 
-      <SectorStory sector={sector.name} now={sector.now} record={sector.record} future={sector.plan} media={mediaForSector(sector.slug, sector.name)} />
+      <SectorStory sector={sector.name} now={sector.now} record={sector.record} media={mediaForSector(sector.slug, sector.name)} />
 
       <section className="mx-auto max-w-4xl px-4 pb-14 md:px-6 lg:px-8 lg:pb-20">
         <div className="rounded-2xl border border-line bg-gold-wash p-6 sm:flex sm:items-center sm:justify-between sm:gap-8 sm:p-8">

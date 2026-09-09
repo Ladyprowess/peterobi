@@ -4,30 +4,28 @@ import { useRef, useState } from "react";
 import { Figure } from "@/components/Figure";
 import { ArrowRight } from "@/components/Icons";
 
-type StoryTab = "now" | "record" | "future";
+type StoryTab = "now" | "record";
 
 const tabLabels: Record<StoryTab, { number: string; title: string; short: string }> = {
   now: { number: "01", title: "Nigeria today", short: "The problem" },
   record: { number: "02", title: "What Obi did in Anambra", short: "His record" },
-  future: { number: "03", title: "What he would do as president", short: "The national case" },
 };
 
 export function SectorStory({
   sector,
   now,
   record,
-  future,
   media,
 }: {
   sector: string;
   now: { headline: string; points: string[] };
   record: { headline: string; points: string[] };
-  future: { headline: string; points: string[] };
-  media: { stage: StoryTab; image: string; type: "photo" | "video"; title: string; caption: string }[];
+  /** Stage is a plain string so retired stages still typecheck, they just never render. */
+  media: { stage: string; image: string; type: "photo" | "video"; title: string; caption: string }[];
 }) {
   const [active, setActive] = useState<StoryTab>("now");
   const rail = useRef<HTMLDivElement>(null);
-  const content = active === "now" ? now : active === "record" ? record : future;
+  const content = active === "now" ? now : record;
   const activeMedia = media.filter((item) => item.stage === active);
 
   function move(direction: number) {
@@ -36,7 +34,7 @@ export function SectorStory({
 
   return (
     <section className="mx-auto max-w-6xl px-4 py-12 md:px-6 lg:px-8 lg:py-20">
-      <div role="tablist" aria-label={`${sector} sections`} className="grid overflow-hidden rounded-2xl border border-line bg-white md:grid-cols-3">
+      <div role="tablist" aria-label={`${sector} sections`} className="grid overflow-hidden rounded-2xl border border-line bg-white md:grid-cols-2">
         {(Object.keys(tabLabels) as StoryTab[]).map((key) => {
           const tab = tabLabels[key];
           const selected = active === key;
@@ -60,7 +58,7 @@ export function SectorStory({
         </ol></div>
 
         <div className="mt-12 border-t border-line pt-8">
-        <div className="flex items-end justify-end gap-5">
+        <div className="flex items-end justify-between gap-5"><div><p className="eyebrow text-green">In pictures and videos</p><h2 className="mt-2 font-display text-2xl font-semibold text-green-ink">{tabLabels[active].title}</h2></div>
           <div className="hidden gap-2 sm:flex"><button onClick={() => move(-1)} aria-label="Previous media" className="grid size-10 place-items-center rounded-full border border-line text-green hover:bg-tint"><ArrowRight className="size-4 rotate-180" /></button><button onClick={() => move(1)} aria-label="Next media" className="grid size-10 place-items-center rounded-full bg-green text-white hover:bg-green-mid"><ArrowRight className="size-4" /></button></div>
         </div>
         <div ref={rail} className="media-rail mt-5 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-3">

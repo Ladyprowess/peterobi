@@ -98,7 +98,7 @@ export const sectors: Sector[] = [
       headline: "What he did in Anambra",
       points: [
         "He met a state with no accredited health institution.",
-        "Twelve stood accredited when he left, two of them hospitals.",
+        "Twelve were accredited by the time he left, two of them hospitals.",
         "He built the Anambra State University Teaching Hospital.",
         "Modern laboratories, consulting clinics and vaccine cold storage went in with it.",
         "He built a kidney dialysis centre and subsidised the treatment.",
@@ -151,7 +151,7 @@ export const sectors: Sector[] = [
       points: [
         "He met Anambra ranked 26th of 36 states in WAEC.",
         "He left it ranked 1st in the country.",
-        "That position held for his last three years.",
+        "Anambra stayed first for his last three years in office.",
         "He sent funding straight to schools and cut the ministry out of the path.",
         "4,000 model primary schools went into the plan.",
         "ICT centres went into the classrooms.",
@@ -202,8 +202,8 @@ export const sectors: Sector[] = [
         "The handover notes are open for anyone to verify.",
         "He refused a ₦500 million presidential lodge and stayed in a hotel instead.",
         "Anambra became the first Nigerian state to start sovereign wealth savings.",
-        "Aerial mapping told him where the roads and the programmes should go.",
-        "Major private investment followed.",
+        "He mapped the state from the air to decide where roads and clinics should go.",
+        "SABMiller and Innoson Motors both chose to build their plants in the state.",
       ],
     },
     plan: {
@@ -254,7 +254,7 @@ export const sectors: Sector[] = [
         "He will make the agencies share intelligence.",
         "Policing and border management get strengthened.",
         "Technology goes in to catch threats early.",
-        "Community security gets a lawful structure at last.",
+        "Community security groups get a legal framework to work inside.",
       ],
     },
   },
@@ -368,7 +368,7 @@ export const sectors: Sector[] = [
       points: [
         "He brought the SABMiller brewery to Anambra.",
         "Innoson Motors, a Nigerian vehicle manufacturer, came with it.",
-        "Clean books are why both of them came.",
+        "They came because the state paid its bills and carried little debt.",
       ],
     },
     plan: {
@@ -404,8 +404,8 @@ export const sectors: Sector[] = [
         "He funded child welfare and rehabilitation homes.",
         "Children came off the street and into care.",
         "Stroke and trauma rehabilitation got funding almost no state provides.",
-        "Health and education moved together as one plan.",
-        "The savings kept growing while he did it.",
+        "He funded health and education together, as one plan for people.",
+        "He paid for all of it while the state savings still grew.",
       ],
     },
     plan: {

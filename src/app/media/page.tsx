@@ -8,7 +8,7 @@ export default function MediaPage() {
   return <>
     <header className="bg-ink text-white"><div className="mx-auto max-w-6xl px-4 py-16 md:px-6 lg:px-8 lg:py-24">
       <p className="eyebrow text-white/55">Look around</p><h1 className="mt-4 max-w-4xl font-display text-5xl font-semibold leading-[1.02] sm:text-6xl">This is the Nigeria we live in today.</h1>
-      <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/70">Behind every statistic are real people dealing with broken roads, struggling hospitals, rising prices and schools that need attention.</p>
+      <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/70">Nigeria is currently dominated with people dealing with broken roads, struggling hospitals, rising prices and schools that need attention.</p>
     </div></header>
     <section className="mx-auto max-w-6xl px-4 py-14 md:px-6 lg:px-8 lg:py-20"><div className="grid gap-6 sm:grid-cols-2">
       {mediaItems.map((item) => <article key={item.title} className="group overflow-hidden rounded-2xl border border-line bg-white">

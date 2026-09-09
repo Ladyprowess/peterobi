@@ -60,7 +60,7 @@ export function SectorStory({
         </ol></div>
 
         <div className="mt-12 border-t border-line pt-8">
-        <div className="flex items-end justify-between gap-5"><div><p className="eyebrow text-green">In pictures and videos</p><h2 className="mt-2 font-display text-2xl font-semibold text-green-ink">{tabLabels[active].title}</h2></div>
+        <div className="flex items-end justify-end gap-5">
           <div className="hidden gap-2 sm:flex"><button onClick={() => move(-1)} aria-label="Previous media" className="grid size-10 place-items-center rounded-full border border-line text-green hover:bg-tint"><ArrowRight className="size-4 rotate-180" /></button><button onClick={() => move(1)} aria-label="Next media" className="grid size-10 place-items-center rounded-full bg-green text-white hover:bg-green-mid"><ArrowRight className="size-4" /></button></div>
         </div>
         <div ref={rail} className="media-rail mt-5 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-3">

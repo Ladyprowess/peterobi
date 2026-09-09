@@ -190,7 +190,8 @@ export const sectors: Sector[] = [
       headline: "What he did in Anambra",
       points: [
         "Debt Management Office records show that Anambra still had domestic and external debt at the end of 2013; claims that the state was completely debt-free are inaccurate.",
-        "Obi has repeatedly said his administration left substantial cash and investments. Later fact-checks found that the popular $150 million or ₦75 billion versions cannot be fully established from public records, so this site treats the amount as disputed rather than settled fact.",
+        "Obi says he left $150 million and ₦36 billion in state savings when he finished his term in 2014, that he owed no contractor, supplier, salary or pension, and that the funds sat in standard bonds and accounts at known public rates. He says the handover notes are open for anyone to verify and rejects any suggestion of personal gain.",
+        "Later fact-checks found that the popular $150 million and ₦75 billion versions cannot be fully established from public records, so this site reports the figures as his account rather than as settled fact.",
         "He coordinated aerial and poverty mapping of the state, using real data to plan infrastructure and social programmes rather than guessing.",
         "He refused to build a N500 million Presidential Lodge for a presidential visit. He vacated his own lodge for the week and stayed in a hotel himself.",
         "He attracted major private investment into the state while keeping its books clean, proving that governance quality is itself an economic input.",

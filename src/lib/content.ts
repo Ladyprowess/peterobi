@@ -414,37 +414,27 @@ export const caseFor2027 = [
 export type VideoSlide = {
   src: string;
   poster: string;
-  /**
-   * Describes only what is visibly in the footage. Do not add a place, a date
-   * or a cause that the clip does not actually show.
-   */
-  caption: string;
 };
 
 export const currentStateVideos: VideoSlide[] = [
   {
     src: "/videos/1.mp4",
     poster: "/videos/1.jpg",
-    caption: "Refuse left uncollected in the open.",
   },
   {
     src: "/videos/4.mp4",
     poster: "/videos/4.jpg",
-    caption: "Traders working under a flyover, surrounded by refuse.",
   },
   {
     src: "/videos/5.mp4",
     poster: "/videos/5.jpg",
-    caption: "A truck pushing through a flooded road.",
   },
   {
     src: "/videos/3.mp4",
     poster: "/videos/3.jpg",
-    caption: "Police officers struggling with a man in the street.",
   },
   {
     src: "/videos/2.mp4",
     poster: "/videos/2.jpg",
-    caption: "Roadside life on the edge of a main road.",
   },
 ];
